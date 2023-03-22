@@ -18,3 +18,8 @@ const imgList = document.querySelector('.gallery');
 const markup = images.map(({url, alt}) => `<li><img src="${url}" alt="${alt}"></li>`).join("");
 
 imgList.insertAdjacentHTML('afterbegin', markup);
+
+imgList.style.display = "flex";
+imgList.style.justifyContent = 'center';
+imgList.style.listStyle = 'none';
+imgList.style.gap = '20px';
