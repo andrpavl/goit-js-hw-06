@@ -8,7 +8,7 @@ const backgroundColorName = document.querySelector('.color')
 const widget = document.querySelector('.widget')
 
 btnChangeColor.addEventListener('click', () => {
-    widget.style.background = getRandomHexColor();
-    backgroundColorName.textContent = getRandomHexColor();
+    const change = widget.style.background = getRandomHexColor();
+    backgroundColorName.textContent = change;
 })
 

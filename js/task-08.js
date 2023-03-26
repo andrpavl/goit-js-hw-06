@@ -9,8 +9,8 @@ function submitHandler (event) {
 
     if (inputEmail.value === "" || inputPassword.value === "") {
        alert("Remember! It works only when both fields are filled in)))");
-    }
-    
-    console.log(`Login: ${inputEmail.value}, Password: ${inputPassword.value}`);
-    event.currentTarget.reset();
+    } else {
+        console.log(`Login: ${inputEmail.value}, Password: ${inputPassword.value}`);
+        event.currentTarget.reset();
+    }  
 }
